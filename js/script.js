@@ -9,11 +9,13 @@ const itemDetailModal = document.querySelector('#item-detail-modal');
 const itemDetailBtns = document.querySelectorAll('.item-detail-button');
 const modalCloseBtn = document.querySelector('.modal-close-icon');
 
-hamburger.onclick = () => {
+hamburger.onclick = (e) => {
+	e.preventDefault();
 	navbarNav.classList.toggle('active');
 };
 
-shopCartBtn.onclick = () => {
+shopCartBtn.onclick = (e) => {
+	e.preventDefault();
 	shoppingCart.classList.toggle('active');
 };
 

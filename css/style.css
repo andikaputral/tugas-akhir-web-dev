@@ -116,6 +116,21 @@ body {
 }
 
 /* Shopping Cart */
+#shopping-cart-button {
+	position: relative;
+}
+
+#shopping-cart-button .quantity-badge {
+	display: inline-block;
+	padding: 1px 5px;
+	background-color: red;
+	border-radius: 100%;
+	font-size: 0.8rem;
+	position: absolute;
+	top: 0;
+	right: -10px;
+}
+
 .navbar .shopping-cart {
 	position: absolute;
 	top: 100%;
@@ -143,27 +158,34 @@ body {
 }
 
 .navbar .shopping-cart img {
-	height: 6rem;
+	height: 4rem;
 	border-radius: 50%;
 }
 
 .navbar .shopping-cart h3 {
-	font-size: 1.6rem;
-	padding-bottom: 0.5rem;
+	font-size: 1.4rem;
 }
 
 .navbar .shopping-cart .item-price {
 	font-size: 1.2rem;
 }
 
-.navbar .shopping-cart .remove-item {
-	position: absolute;
-	right: 1rem;
+.navbar .shopping-cart .cart-item #add,
+.navbar .shopping-cart .cart-item #remove {
+	display: inline-block;
+	padding: 2px 5px;
 	cursor: pointer;
+	margin: 0 8px;
+	background-color: var(--bg);
+	color: white;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
 
-.navbar .shopping-cart .remove-item:hover {
-	color: red;
+.navbar .shopping-cart h4 {
+	font-size: 1.6rem;
+	margin-top: -1rem;
+	text-align: center;
 }
 
 /* Hero */
@@ -400,12 +422,6 @@ body {
 .products .product-price {
 	font-size: 1.3rem;
 	font-weight: bold;
-}
-
-.products .product-price span {
-	text-decoration: line-through;
-	font-weight: lighter;
-	font-size: 1rem;
 }
 
 .contact .row {
